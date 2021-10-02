@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+@font-face {
+    font-family: título;
+    src: url(../FONTES/Delight\ Candles\ .ttf);
+    font-family: texto;
+    scr: url(../FONTES/Vogue.ttf)
+}
+
+#principal{
+    display: grid;
+    grid-template-areas:
+                         "b b"
+                         "texto hospital"
+                         "img img"
+                         "sigla sigla"
+                         "d d";
+    grid-auto-rows: minmax(300px,auto);
+    grid-column: 300px;
+    margin: 10px,auto;
+    grid-auto-columns: minmax(400px,auto);
+    gap: 5px;
+
+}
+
+#b{
+    grid-area: b;
+    background-color:green;
+    font-family: titulo;
+    text-align: left;
+    margin-bottom: 80px;
+}
+.c{
+    grid-area: texto;
+    
+    margin: 10px,auto;
+    background-color:lightgreen ;
+    font-size: 25px;
+    font-family: texto;
+    padding: 5px;
+}
+.e{
+    grid-area: img;
+    margin: 10px,auto;
+    background-color:green;
+    font-family: título;
+    font-size: 80px;
+    text-align: center;
+}
+.d{
+    grid-area: hospital;
+    background-color:lightgreen ;
+    background-image: url(../IMAGENS/médico.jpg);
+}
+.g{
+    grid-area: sigla;
+    background-color:white ;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    margin:10px;
+}
+p{
+    font-size: 30px;
+}
+    img{
+        float: left;
+    }
+.h{
+    grid-area: d;
+    font-family: titulo;
+    height: 100px;
+    background-color:green ;
+ 
+}
+nav > ul{
+    display: flex;
+}
+a{
+    text-decoration: underline;
+    font-family: titulo;
+    color: white;
+}
+nav > ul > li{
+    list-style: none;
+    width: 350px;
+    text-align: center;
+}
